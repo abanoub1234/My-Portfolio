@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Page</title>
+  <style>
+   /* Navbar Styling */
+   .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #008040;
+      width: 100%;
+      height: 60px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #004000;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+  </style>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; text-align: center;">
+
+  
+       <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a>MyPortfolio</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="IDO.html">What I Do</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="goodAt.html">Good At</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="overview.html">Overview</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title -->
+  <h1 style="margin: 30px 0; font-size: 28px; color: #333;">Send Us Your Feedback</h1>
+
+  <!-- Feedback Form -->
+  <form style="max-width: 700px; margin: 20px auto; padding: 20px ; background: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    
+    <!-- Textarea for Feedback -->
+    <textarea 
+      name="feedback" 
+      rows="10" 
+      placeholder="Write your feedback here..." 
+      style="width: 95%; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px; resize: none; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);"
+      required>
+    </textarea>
+    
+    <!-- Submit Button -->
+    <button 
+      type="submit" 
+      style="margin-top: 15px; padding: 10px 20px; font-size: 18px; color: #fff; background-color: #4CAF50; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+      Submit
+    </button>
+    
+  </form>
+
+</body>
+</html>

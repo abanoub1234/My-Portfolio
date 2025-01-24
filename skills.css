@@ -1,0 +1,117 @@
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Navbar Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #008040;
+      width: 100%;
+      height: 60px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #004000;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+	
+/* Technical Skills Section */
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  height: 20px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #4caf50;
+  height: 100%;
+  line-height: 20px;
+  text-align: right;
+  color: #fff;
+  padding-right: 10px;
+  font-size: 14px;
+  border-radius: 25px;
+}
+
+/* Professional Skills Section */
+.skill-circle {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #4caf50 calc(var(--percentage) * 1%), 
+    #ddd calc(var(--percentage) * 1%)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 10px;
+}
+
+.circle span {
+  position: absolute;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.circle p {
+  position: absolute;
+  top: 90%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}

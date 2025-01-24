@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url('back.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+    }
+
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #008040;
+      padding: 10px 20px;
+      height: 60px;
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #004000;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    #content {
+      margin-top: 100px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #333;
+      animation: fadeInDown 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: #555;
+      margin-top: 15px;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#">MyPortfolio</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="IDO.html">What I Do</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="goodAt.html">Good At</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="overview.html">Overview</a></li>
+    </ul>
+  </nav>
+
+  <!-- Welcome Section -->
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+  <section id="content">
+    <h1>Welcome to My Portfolio</h1>
+    <p><strong>Explore my skills, What I Do, and more!</strong></p>
+  </section>
+</body>
+</html>

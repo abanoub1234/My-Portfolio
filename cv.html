@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Container for the two-column layout */
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Left column (Icons and Data) */
+    .left-column {
+      width: 40%;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-column .icon {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .left-column .icon i {
+      font-size: 40px;
+      color: #008040;
+    }
+
+    .left-column .icon p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+    }
+
+    /* Right column (Image and Name) */
+    .right-column {
+      width: 55%;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Profile Image */
+    #profile img {
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
+      margin-bottom: 20px;
+      border: 4px solid #008040;
+    }
+
+    /* Profile Name and Title */
+    #profile h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    #profile p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #008040;
+      padding: 10px 20px;
+      width: 100%;
+      height: 60px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #004000;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">MyPortfolio</a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="IDO.html">What I Do</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="goodAt.html">Good At</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="overview.html">Overview</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Container with Two Columns -->
+  <div class="container">
+    <!-- Left column (Icons and Data) -->
+    <div class="left-column">
+      <div class="icon">
+        <i class="fas fa-university"></i>
+        <p>Faculty of Computers and Information</p>
+      </div>
+      <div class="icon">
+        <i class="fas fa-envelope"></i>
+        <p>abanobemad45@gmail.com</p>
+      </div>
+      <div class="icon">
+        <i class="fas fa-phone"></i>
+        <p>+20 1274454814</p>
+      </div>
+      <div class="icon">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Egypt</p>
+      </div>
+      <div class="icon">
+        <i class="fas fa-graduation-cap"></i>
+        <p>Graduation Year: 2023</p>
+      </div>
+    </div>
+
+    <!-- Right column (Image and Name) -->
+    <div class="right-column">
+      <div style="text-align:center;" id="profile">
+        <img  src="Abanoub.png" alt="Your Photo">
+        <h1>Abanoub Emad Fares</h1>
+        <p>Web Developer</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

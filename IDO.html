@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What I Do</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #008040;
+      padding: 10px 20px;
+      height: 60px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #004000;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    /* Main Content Styling */
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+      color: #008040;
+    }
+
+    /* Card Grid */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* Individual Card Styling */
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin: 15px 0;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #555;
+      margin: 0 10px 20px;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a>MyPortfolio</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="IDO.html">What I Do</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="goodAt.html">Good At</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="overview.html">Overview</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>What I Do</h1>
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1669023414180-4dcf35d943e1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 1">
+        <h2>Web Development</h2>
+        <p>Building responsive and user-friendly websites tailored to client needs.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1630442923896-244dd3717b35?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2">
+        <h2>App Development</h2>
+        <p>Creating modern and efficient mobile applications for various platforms.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 3">
+        <h2>UI/UX Design</h2>
+        <p>Designing intuitive and aesthetically pleasing user interfaces and experiences.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 4">
+        <h2>Data Analysis</h2>
+        <p>Analyzing and interpreting data to drive informed decision-making.</p>
+      </div>
+    </div>
+	
+	<br>
+	<br>
+	
+	<div class="card-grid">
+  <!-- Card 5 -->
+  <div class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1682124651258-410b25fa9dc0?q=80&w=1921&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 1">
+    <h2>Machine Learning</h2>
+    <p>Developing intelligent models to solve complex real-world problems.</p>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1667984390553-7f439e6ae401?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2">
+    <h2>Cloud Computing</h2>
+    <p>Designing and deploying scalable cloud solutions for business needs.</p>
+  </div>
+
+  <!-- Card 7 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 3">
+    <h2>Cybersecurity</h2>
+    <p>Ensuring secure systems by implementing robust defense mechanisms.</p>
+  </div>
+
+  <!-- Card 8 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1623479322729-28b25c16b011?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 4">
+    <h2>DevOps</h2>
+    <p>Streamlining development and operations for continuous delivery.</p>
+  </div>
+</div>
+
+  </div>
+
+ 
+</body>
+</html>

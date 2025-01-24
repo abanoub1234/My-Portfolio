@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .slider img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: slide-animation 15s infinite;
+        }
+
+        /* Animation for the images */
+        @keyframes slide-animation {
+            0%, 20% { opacity: 1; }
+            25%, 100% { opacity: 0; }
+        }
+
+        /* Display images one after another */
+        .slider img:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .slider img:nth-child(2) {
+            animation-delay: 3s;
+        }
+
+        .slider img:nth-child(3) {
+            animation-delay: 6s;
+        }
+
+        .slider img:nth-child(4) {
+            animation-delay: 9s;
+        }
+
+        .slider img:nth-child(5) {
+            animation-delay: 12s;
+        }
+
+    /* Navbar Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #008040;
+      width: 100%;
+      height: 60px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #004000;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">MyPortfolio</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="IDO.html">What I Do</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="goodAt.html">Good At</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="overview.html">Overview</a></li>
+          </ul>
+      </nav>
+
+    <div class="slider">
+        <img src="1.png" alt="Image 1">
+        <img src="2.png" alt="Image 2">
+        <img src="3.png" alt="Image 3">
+        <img src="4.png" alt="Image 4">
+        <img src="5.png" alt="Image 5">
+    </div>
+</body>
+</html>
